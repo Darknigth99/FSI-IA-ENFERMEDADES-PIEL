@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ca5b4e8-1f77-4d68-8062-be980d1a9fc3" name="Changes" comment="Errors fixed">
+    <list default="true" id="3ca5b4e8-1f77-4d68-8062-be980d1a9fc3" name="Changes" comment="Documentation fixed">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/software/fsi/io/image_class_assigner.py" beforeDir="false" afterPath="$PROJECT_DIR$/software/fsi/io/image_class_assigner.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,7 +39,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Python.image_class_assigner.executor": "Debug",
+    "Python.image_class_assigner.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master",
@@ -84,12 +85,21 @@
       <option name="project" value="LOCAL" />
       <updated>1760201896065</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Documentation fixed">
+      <option name="closed" value="true" />
+      <created>1760202163957</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1760202163957</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Proyect created.&#10;ImageLabel loader implemented" />
     <MESSAGE value="Errors fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Errors fixed" />
+    <MESSAGE value="Documentation fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Documentation fixed" />
   </component>
 </project>
