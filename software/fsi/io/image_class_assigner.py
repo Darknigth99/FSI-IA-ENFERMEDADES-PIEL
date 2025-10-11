@@ -17,13 +17,13 @@ def create_labels(limited=infinity, route=default_route):
         Returns:
         - (train_labels, test_labels): two dictionaries {image_name: label}
     """
-
-    if default_route.split("\\")[-1] != "SkinDisease":
+    # We check the route is valid
+    if os.path.basename(route) != "SkinDisease":
         print("Ruta inválida. Debe apuntar al directorio 'SkinDisease'")
         return None
 
     try:
-        files = os.listdir(route)
+        os.listdir(route)
     except FileNotFoundError:
         print("No se ha podido encontrar la ruta indicada")
         return None
@@ -54,6 +54,10 @@ def create_labels(limited=infinity, route=default_route):
 
 
 def add_current_label(current_label, route, labels):
+    """
+        Adds all image filenames in the given directory to the labels dictionary,
+        assigning them the provided label.
+    """
 
     for image in enumerate(os.listdir(route)):
         labels[image] = current_label
@@ -61,8 +65,8 @@ def add_current_label(current_label, route, labels):
     return labels
 
 
-# if you want to test the code, execute this
-# change variables if considered necesary
+# If you want to test the code, execute this block.
+# Change variables if necessary.
 if __name__ == "__main__":
     tr_labels, te_labels, m = create_labels(5)
     print(m)

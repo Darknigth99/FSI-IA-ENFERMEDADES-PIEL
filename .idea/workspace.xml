@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ca5b4e8-1f77-4d68-8062-be980d1a9fc3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/FSI-IA.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/software/fsi/io/image_class_assigner.py" afterDir="false" />
-    </list>
+    <list default="true" id="3ca5b4e8-1f77-4d68-8062-be980d1a9fc3" name="Changes" comment="Proyect created.&#10;ImageLabel loader implemented" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -65,6 +58,19 @@
       <option name="presentableId" value="Default" />
       <updated>1760197761832</updated>
     </task>
+    <task id="LOCAL-00001" summary="Proyect created.&#10;ImageLabel loader implemented">
+      <option name="closed" value="true" />
+      <created>1760201622513</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1760201622513</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Proyect created.&#10;ImageLabel loader implemented" />
+    <option name="LAST_COMMIT_MESSAGE" value="Proyect created.&#10;ImageLabel loader implemented" />
   </component>
 </project>
