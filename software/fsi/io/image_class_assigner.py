@@ -15,9 +15,18 @@ def create_labels(limited=infinity, route=default_route):
         - route (str): path to the main dataset directory (should end with 'SkinDisease')
 
         Returns:
-        - (train_labels, test_labels): two dictionaries {image_name: label}
+        tuple[dict, dict, dict]
+
+        A tuple containing:
+        - train_labels : dict[str, int]
+            Maps each training image filename to its numerical label.
+        - test_labels : dict[str, int]
+            Maps each test image filename to its numerical label.
+        - meaning_labels : dict[int, str]
+            Maps each numerical label to its corresponding disease name.
+
     """
-    # We check the route is valid
+    # Validate route
     if os.path.basename(route) != "SkinDisease":
         print("Ruta inválida. Debe apuntar al directorio 'SkinDisease'")
         return None
@@ -36,14 +45,15 @@ def create_labels(limited=infinity, route=default_route):
     test_route = os.path.join(route, "test")
     train_route = os.path.join(route, "train")
 
-    for directory in enumerate(os.listdir(train_route)):
-        temp_route_train = os.path.join(train_route, directory[1])
-        temp_route_test = os.path.join(test_route, directory[1])
+    # Iterate inside the train directory to get subdirectories names
+    for _, disease_name in enumerate(os.listdir(train_route)):
+        temp_route_train = os.path.join(train_route, disease_name)
+        temp_route_test = os.path.join(test_route, disease_name)
 
         add_current_label(added_diseases, temp_route_train, train_labels)
         add_current_label(added_diseases, temp_route_test, test_labels)
 
-        meaning_labels[added_diseases] = directory[1]
+        meaning_labels[added_diseases] = disease_name
 
         added_diseases += 1
 
