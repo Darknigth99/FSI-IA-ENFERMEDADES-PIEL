@@ -59,7 +59,7 @@ def add_current_label(current_label, route, labels):
         assigning them the provided label.
     """
 
-    for image in enumerate(os.listdir(route)):
+    for _, image in enumerate(os.listdir(route)):
         labels[image] = current_label
 
     return labels
