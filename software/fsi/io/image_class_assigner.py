@@ -5,6 +5,8 @@ import os
 import shutil
 from sys import maxsize as infinity
 
+from software.fsi.io.convert_functions import convert_to_tuple
+
 # Default route to the dataset (it must contain 'train' and 'test' subfolders to work)
 default_route = os.path.join(os.path.join(os.path.expanduser("~"), "Downloads"), "SkinDisease")
 prefix = 0
@@ -188,4 +190,4 @@ def copy_images_to_all_images_directory(current_dir, target_dir):
 # Change variables if necessary.
 if __name__ == "__main__":
     trl, tel, ml = manager_io_images(amount_of_diseases=5)
-    print(ml.values())
+    print(convert_to_tuple(ml))
