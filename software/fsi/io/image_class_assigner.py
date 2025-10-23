@@ -18,7 +18,8 @@ def manager_io_images(
         dir_name="All_Images",
         write_info_text=True,
         name_info_file="Info",
-        move_images_into_all_images_dir=True
+        move_images_into_all_images_dir=True,
+        dir_target=default_route
     ):
 
     try:
@@ -32,7 +33,12 @@ def manager_io_images(
         if create_dir_with_all_images:
            dir_with_all_images = create_directory(dir_name, route)
 
-        trl, tel, ml = create_labels(amount_of_diseases, route, dir_with_all_images, move_images_into_all_images_dir)
+        trl, tel, ml = (create_labels
+                        (amount_of_diseases,
+                         route,
+                         dir_with_all_images,
+                         move_images_into_all_images_dir,
+                         dir_target=dir_target))
 
         if write_info_text:
             write_text_file(name_info_file, route, ml, trl, tel)
@@ -44,7 +50,7 @@ def manager_io_images(
 
 
 
-def create_labels(limited, route, all_images_dir, copy_images=True):
+def create_labels(limited, route, all_images_dir, copy_images=True, dir_target=default_route):
     """
         Generates dictionaries mapping image filenames to their numerical label.
 
@@ -189,5 +195,5 @@ def copy_images_to_all_images_directory(current_dir, target_dir):
 # If you want to test the code, execute this block.
 # Change variables if necessary.
 if __name__ == "__main__":
-    trl, tel, ml = manager_io_images(amount_of_diseases=5)
+
     print(convert_to_tuple(ml))
