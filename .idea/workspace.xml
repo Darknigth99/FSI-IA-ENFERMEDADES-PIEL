@@ -4,14 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ca5b4e8-1f77-4d68-8062-be980d1a9fc3" name="Changes" comment="ultima update">
+    <list default="true" id="3ca5b4e8-1f77-4d68-8062-be980d1a9fc3" name="Changes" comment="loader with limited diseases fixed">
+      <change afterPath="$PROJECT_DIR$/software/fsi/ia/model.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/software/fsi/ia/utilities.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/software/fsi/io/image_class_assigner.py" beforeDir="false" afterPath="$PROJECT_DIR$/software/fsi/io/image_class_assigner.py" afterDir="false" />
     </list>
+    <list id="c5497032-6ed4-4b75-92d8-c0cdf0a6d559" name="Changes by cargo" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -183,7 +193,15 @@
       <option name="project" value="LOCAL" />
       <updated>1761214001914</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="loader with limited diseases fixed">
+      <option name="closed" value="true" />
+      <created>1761231638408</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1761231638408</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -193,17 +211,7 @@
     <MESSAGE value="Code reorganized.&#10;Functions to have all_images in one fold implemeted.&#10;Function to write a text file with information about the images added." />
     <MESSAGE value="Starting IA code" />
     <MESSAGE value="ultima update" />
-    <option name="LAST_COMMIT_MESSAGE" value="ultima update" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/software/fsi/ia/Main.py</url>
-          <line>26</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="loader with limited diseases fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="loader with limited diseases fixed" />
   </component>
 </project>

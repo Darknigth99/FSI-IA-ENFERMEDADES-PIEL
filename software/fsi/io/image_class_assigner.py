@@ -5,7 +5,6 @@ import os
 import shutil
 from sys import maxsize as infinity
 
-from software.fsi.io.convert_functions import convert_to_tuple
 
 # Default route to the dataset (it must contain 'train' and 'test' subfolders to work)
 default_route = os.path.join(os.path.join(os.path.expanduser("~"), "Downloads"), "SkinDisease")
@@ -29,8 +28,6 @@ def manager_io_images(
 
     except Exception as e:
         print(f"Ha ocurrido un error: {e}")
-
-
 
 def create_labels(limited, source_route, target_dir):
     """
