@@ -13,35 +13,17 @@ prefix = 0
 
 def manager_io_images(
         amount_of_diseases=infinity,
-        route=default_route,
-        create_dir_with_all_images=True,
-        dir_name="All_Images",
-        write_info_text=True,
-        name_info_file="Info",
-        move_images_into_all_images_dir=True,
+        source_route=default_route,
         dir_target=default_route
     ):
 
     try:
+        print("Cargando datos")
+        trl, tel, ml = create_labels(amount_of_diseases,
+                                     source_route,
+                                     dir_target)
 
-        dir_with_all_images = None
-
-        trl = None
-        tel = None
-        ml = None
-
-        if create_dir_with_all_images:
-           dir_with_all_images = create_directory(dir_name, route)
-
-        trl, tel, ml = (create_labels
-                        (amount_of_diseases,
-                         route,
-                         dir_with_all_images,
-                         move_images_into_all_images_dir,
-                         dir_target=dir_target))
-
-        if write_info_text:
-            write_text_file(name_info_file, route, ml, trl, tel)
+        write_text_file("Info", dir_target, ml, trl, tel)
 
         return trl, tel, ml
 
@@ -50,7 +32,7 @@ def manager_io_images(
 
 
 
-def create_labels(limited, route, all_images_dir, copy_images=True, dir_target=default_route):
+def create_labels(limited, source_route, target_dir):
     """
         Generates dictionaries mapping image filenames to their numerical label.
 
@@ -71,49 +53,26 @@ def create_labels(limited, route, all_images_dir, copy_images=True, dir_target=d
 
     """
 
-    # Validate if the route works
-    os.listdir(route)
+    # Validate if the source_route works
+    os.listdir(source_route)
 
-    # Validate route
-    if os.path.basename(route) != "SkinDisease":
+    # Validate source_route
+    if os.path.basename(source_route) != "SkinDisease":
         raise FileNotFoundError("La ruta pasada es inválida, debe apuntar al directorio 'SkinDisease'")
 
     train_labels = dict()
     test_labels = dict()
     meaning_labels = dict()
-    added_diseases = 0
 
-    training_dir_with_all_images = None
-    test_dir_with_all_images = None
+    test_source = os.path.join(source_route, "test")
+    train_source = os.path.join(source_route, "train")
 
-    test_route = os.path.join(route, "test")
-    train_route = os.path.join(route, "train")
+    # In the target directory, we create 2 subdirectories for test and training
+    training_target = create_directory("Training", target_dir)
+    test_target = create_directory("Test", target_dir)
 
-    if copy_images:
-        # In the directory with all images, we create 2 subdirectories for test and training
-        training_dir_with_all_images = create_directory("Training", all_images_dir)
-        test_dir_with_all_images = create_directory("Test", all_images_dir)
-
-    # Iterate inside the train directory to get subdirectories names
-    for disease_name in os.listdir(train_route):
-        temp_route_train = os.path.join(train_route, disease_name)
-        temp_route_test = os.path.join(test_route, disease_name)
-
-        # for current disease, we add a label for train images and test iamges
-        add_current_label(added_diseases, temp_route_train, train_labels)
-        add_current_label(added_diseases, temp_route_test, test_labels)
-
-        if copy_images:
-            copy_images_to_all_images_directory(temp_route_train, training_dir_with_all_images)
-            copy_images_to_all_images_directory(temp_route_test, test_dir_with_all_images)
-
-        # also, we create a meaning label in case user want to know what it means the number
-        meaning_labels[added_diseases] = disease_name
-
-        added_diseases += 1
-
-        if added_diseases >= limited:
-           break
+    copy_images_from_to(train_source, training_target, limited, train_labels, meaning_labels)
+    copy_images_from_to(test_source, test_target, limited, test_labels)
 
     return train_labels, test_labels, meaning_labels
 
@@ -178,7 +137,7 @@ def write_text_file(name, route, meaning_label, trl, tel):
 
     return
 
-def copy_images_to_all_images_directory(current_dir, target_dir):
+def move_images_to_target_dir(current_dir, target_dir):
     global prefix
 
     """
@@ -191,9 +150,35 @@ def copy_images_to_all_images_directory(current_dir, target_dir):
         prefix += 1
     return
 
+def copy_images_from_to(source_route, target_route, amount_of_diseases, labels, meaning_label=None):
+    directories = [d for d in os.listdir(source_route)]
 
-# If you want to test the code, execute this block.
-# Change variables if necessary.
-if __name__ == "__main__":
+    # check if there is less diseases than the amount needed
+    if len(directories) < amount_of_diseases:
+        amount_of_diseases = len(directories)
 
-    print(convert_to_tuple(ml))
+    added = 0
+
+    # for each disease
+    for disease_name in os.listdir(source_route):
+
+        # create a temporary route pointing the disease directory
+        temp_route = os.path.join(source_route, disease_name)
+
+        # adding the current image to the label
+        add_current_label(added, temp_route, labels)
+
+        # create a new dir with the route of the current target dir and the current disease
+        new_route_disease = create_directory(disease_name, target_route)
+
+        # copy the imagess to the target route
+        move_images_to_target_dir(temp_route, new_route_disease)
+
+        # if given a dictionary, add a label with the current disease
+        if meaning_label:
+            meaning_label[disease_name] = added
+
+        added += 1
+
+        if added >= amount_of_diseases:
+            break
