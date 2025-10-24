@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ca5b4e8-1f77-4d68-8062-be980d1a9fc3" name="Changes" comment="net implemented. utilities half implemented. &#10;&#10;image_class_assigner.py needs a optimization to avoid loading multiple times" />
+    <list default="true" id="3ca5b4e8-1f77-4d68-8062-be980d1a9fc3" name="Changes" comment="optimization implemented">
+      <change beforePath="$PROJECT_DIR$/software/fsi/io/image_class_assigner.py" beforeDir="false" afterPath="$PROJECT_DIR$/software/fsi/io/image_class_assigner.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -203,7 +205,15 @@
       <option name="project" value="LOCAL" />
       <updated>1761237948537</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="optimization implemented">
+      <option name="closed" value="true" />
+      <created>1761301368767</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1761301368767</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -215,6 +225,7 @@
     <MESSAGE value="ultima update" />
     <MESSAGE value="loader with limited diseases fixed" />
     <MESSAGE value="net implemented. utilities half implemented. &#10;&#10;image_class_assigner.py needs a optimization to avoid loading multiple times" />
-    <option name="LAST_COMMIT_MESSAGE" value="net implemented. utilities half implemented. &#10;&#10;image_class_assigner.py needs a optimization to avoid loading multiple times" />
+    <MESSAGE value="optimization implemented" />
+    <option name="LAST_COMMIT_MESSAGE" value="optimization implemented" />
   </component>
 </project>

@@ -115,7 +115,8 @@ def write_text_file(name, route, meaning_label, trl, tel):
     actual_route = os.path.join(route, f"{name}.txt")
 
     with open(actual_route, "w") as f:
-        f.write(f"Amount of diseases added = {len(meaning_label)}, total images of the directory = {len(trl) + len(tel)}.\n"
+        f.write(f"Amount of diseases added = {len(meaning_label)}, total images of the directory = {len(trl) + len(tel)}. \n"
+               f"Training length = {len(trl)}. Test length = {len(tel)}.\n"
                f"Date of the data: {datetime.datetime.now()}.\n"
                f"Meaning of the label = {meaning_label}.\n\n")
 
