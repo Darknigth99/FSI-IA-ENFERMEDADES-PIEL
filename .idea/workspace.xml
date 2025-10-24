@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ca5b4e8-1f77-4d68-8062-be980d1a9fc3" name="Changes" comment="loader with limited diseases fixed">
-      <change afterPath="$PROJECT_DIR$/software/fsi/ia/model.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/software/fsi/ia/utilities.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/software/fsi/io/image_class_assigner.py" beforeDir="false" afterPath="$PROJECT_DIR$/software/fsi/io/image_class_assigner.py" afterDir="false" />
-    </list>
-    <list id="c5497032-6ed4-4b75-92d8-c0cdf0a6d559" name="Changes by cargo" comment="" />
+    <list default="true" id="3ca5b4e8-1f77-4d68-8062-be980d1a9fc3" name="Changes" comment="net implemented. utilities half implemented. &#10;&#10;image_class_assigner.py needs a optimization to avoid loading multiple times" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,20 +40,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Python.IA_code.executor": "Run",
-    "Python.Main.executor": "Run",
-    "Python.convert_functions.executor": "Run",
-    "Python.image_class_assigner.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/ivanl/PycharmProjects/PythonProject2/Resources",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python.IA_code.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.convert_functions.executor&quot;: &quot;Run&quot;,
+    &quot;Python.image_class_assigner.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ivanl/PycharmProjects/PythonProject2/Resources&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\ivanl\PycharmProjects\PythonProject2\Resources" />
@@ -201,7 +195,15 @@
       <option name="project" value="LOCAL" />
       <updated>1761231638408</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="net implemented. utilities half implemented. &#10;&#10;image_class_assigner.py needs a optimization to avoid loading multiple times">
+      <option name="closed" value="true" />
+      <created>1761237948536</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1761237948537</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -212,6 +214,7 @@
     <MESSAGE value="Starting IA code" />
     <MESSAGE value="ultima update" />
     <MESSAGE value="loader with limited diseases fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="loader with limited diseases fixed" />
+    <MESSAGE value="net implemented. utilities half implemented. &#10;&#10;image_class_assigner.py needs a optimization to avoid loading multiple times" />
+    <option name="LAST_COMMIT_MESSAGE" value="net implemented. utilities half implemented. &#10;&#10;image_class_assigner.py needs a optimization to avoid loading multiple times" />
   </component>
 </project>

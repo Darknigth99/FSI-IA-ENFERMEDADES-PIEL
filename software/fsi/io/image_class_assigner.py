@@ -17,7 +17,7 @@ def manager_io_images(
     ):
 
     try:
-        print("Cargando datos")
+
         trl, tel, ml = create_labels(amount_of_diseases,
                                      source_route,
                                      dir_target)
@@ -68,8 +68,8 @@ def create_labels(limited, source_route, target_dir):
     training_target = create_directory("Training", target_dir)
     test_target = create_directory("Test", target_dir)
 
-    copy_images_from_to(train_source, training_target, limited, train_labels, meaning_labels)
-    copy_images_from_to(test_source, test_target, limited, test_labels)
+    train_labels, meaning_labels = copy_images_from_to(train_source, training_target, limited, train_labels, meaning_labels)
+    test_labels, _ = copy_images_from_to(test_source, test_target, limited, test_labels, {})
 
     return train_labels, test_labels, meaning_labels
 
@@ -147,7 +147,7 @@ def move_images_to_target_dir(current_dir, target_dir):
         prefix += 1
     return
 
-def copy_images_from_to(source_route, target_route, amount_of_diseases, labels, meaning_label=None):
+def copy_images_from_to(source_route, target_route, amount_of_diseases, labels, meaning_label):
     directories = [d for d in os.listdir(source_route)]
 
     # check if there is less diseases than the amount needed
@@ -172,10 +172,11 @@ def copy_images_from_to(source_route, target_route, amount_of_diseases, labels, 
         move_images_to_target_dir(temp_route, new_route_disease)
 
         # if given a dictionary, add a label with the current disease
-        if meaning_label:
-            meaning_label[disease_name] = added
+        meaning_label[disease_name] = added
 
         added += 1
 
         if added >= amount_of_diseases:
             break
+
+    return labels, meaning_label
