@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ca5b4e8-1f77-4d68-8062-be980d1a9fc3" name="Changes" comment="optimization implemented">
-      <change beforePath="$PROJECT_DIR$/software/fsi/io/image_class_assigner.py" beforeDir="false" afterPath="$PROJECT_DIR$/software/fsi/io/image_class_assigner.py" afterDir="false" />
+    <list default="true" id="3ca5b4e8-1f77-4d68-8062-be980d1a9fc3" name="Changes" comment="write text file modified">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/software/fsi/ia/utilities.py" beforeDir="false" afterPath="$PROJECT_DIR$/software/fsi/ia/utilities.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,20 +43,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;Python.IA_code.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Python.convert_functions.executor&quot;: &quot;Run&quot;,
-    &quot;Python.image_class_assigner.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/ivanl/PycharmProjects/PythonProject2/Resources&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.IA_code.executor": "Run",
+    "Python.Main.executor": "Run",
+    "Python.convert_functions.executor": "Run",
+    "Python.image_class_assigner.executor": "Run",
+    "Python.utilities.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/ivanl/PycharmProjects/PythonProject2/Resources",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\ivanl\PycharmProjects\PythonProject2\Resources" />
@@ -111,9 +113,32 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="utilities" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="FSI-IA" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/software/fsi/ia" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/software/fsi/ia/utilities.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python.Main" />
+        <item itemvalue="Python.utilities" />
         <item itemvalue="Python.image_class_assigner" />
       </list>
     </recent_temporary>
@@ -213,7 +238,15 @@
       <option name="project" value="LOCAL" />
       <updated>1761301368767</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="write text file modified">
+      <option name="closed" value="true" />
+      <created>1761301571359</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1761301571359</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -226,6 +259,7 @@
     <MESSAGE value="loader with limited diseases fixed" />
     <MESSAGE value="net implemented. utilities half implemented. &#10;&#10;image_class_assigner.py needs a optimization to avoid loading multiple times" />
     <MESSAGE value="optimization implemented" />
-    <option name="LAST_COMMIT_MESSAGE" value="optimization implemented" />
+    <MESSAGE value="write text file modified" />
+    <option name="LAST_COMMIT_MESSAGE" value="write text file modified" />
   </component>
 </project>
