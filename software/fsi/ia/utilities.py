@@ -86,7 +86,8 @@ def train_with_validation(model, train_loader, dev_loader, criterion, optimizer,
               f'train_loss: {avg_train_loss:.3f} | train_acc: {train_acc:.2f}% | '
               f'dev_loss: {avg_dev_loss:.3f} | dev_acc: {dev_acc:.2f}%')
 
-        return model, history
+    return model, history
+
 
 def seed_everything(seed):
     torch.manual_seed(seed)

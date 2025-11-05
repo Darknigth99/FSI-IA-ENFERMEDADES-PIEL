@@ -6,6 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="3ca5b4e8-1f77-4d68-8062-be980d1a9fc3" name="Changes" comment="write text file modified">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/software/fsi/ia/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/software/fsi/ia/model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/software/fsi/ia/utilities.py" beforeDir="false" afterPath="$PROJECT_DIR$/software/fsi/ia/utilities.py" afterDir="false" />
+    </list>
+    <list id="9e9f3c14-bc8b-4389-8aa6-98f5d2af86ca" name="Changes by cargo" comment="">
       <change beforePath="$PROJECT_DIR$/software/fsi/ia/utilities.py" beforeDir="false" afterPath="$PROJECT_DIR$/software/fsi/ia/utilities.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -35,6 +39,16 @@
     &quot;accountId&quot;: &quot;4470d5f0-ad58-4726-bab2-ab58edb98481&quot;
   }
 }</component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/software/fsi/ia/utilities.py">
+      <ranges>
+        <range start1="11" end1="12" start2="11" end2="13" changelist="9e9f3c14-bc8b-4389-8aa6-98f5d2af86ca" />
+        <range start1="40" end1="40" start2="41" end2="42" changelist="9e9f3c14-bc8b-4389-8aa6-98f5d2af86ca" />
+        <range start1="88" end1="89" start2="90" end2="91" changelist="3ca5b4e8-1f77-4d68-8062-be980d1a9fc3" />
+        <range start1="90" end1="90" start2="92" end2="93" changelist="3ca5b4e8-1f77-4d68-8062-be980d1a9fc3" />
+      </ranges>
+    </file>
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
@@ -43,21 +57,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Python.IA_code.executor": "Run",
-    "Python.Main.executor": "Run",
-    "Python.convert_functions.executor": "Run",
-    "Python.image_class_assigner.executor": "Run",
-    "Python.utilities.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/ivanl/PycharmProjects/PythonProject2/Resources",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python.IA_code.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.convert_functions.executor&quot;: &quot;Run&quot;,
+    &quot;Python.image_class_assigner.executor&quot;: &quot;Run&quot;,
+    &quot;Python.utilities.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ivanl/PycharmProjects/PythonProject2/Resources&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\ivanl\PycharmProjects\PythonProject2\Resources" />
