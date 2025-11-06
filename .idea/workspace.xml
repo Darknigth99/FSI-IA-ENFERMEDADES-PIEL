@@ -4,14 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ca5b4e8-1f77-4d68-8062-be980d1a9fc3" name="Changes" comment="write text file modified">
+    <list default="true" id="3ca5b4e8-1f77-4d68-8062-be980d1a9fc3" name="Changes" comment="training started">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/software/fsi/ia/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/software/fsi/ia/model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/software/fsi/ia/utilities.py" beforeDir="false" afterPath="$PROJECT_DIR$/software/fsi/ia/utilities.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/software/fsi/io/convert_functions.py" beforeDir="false" />
     </list>
-    <list id="9e9f3c14-bc8b-4389-8aa6-98f5d2af86ca" name="Changes by cargo" comment="">
-      <change beforePath="$PROJECT_DIR$/software/fsi/ia/utilities.py" beforeDir="false" afterPath="$PROJECT_DIR$/software/fsi/ia/utilities.py" afterDir="false" />
-    </list>
+    <list id="9e9f3c14-bc8b-4389-8aa6-98f5d2af86ca" name="Changes by cargo" comment="Changes by cargo" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,16 +36,6 @@
     &quot;accountId&quot;: &quot;4470d5f0-ad58-4726-bab2-ab58edb98481&quot;
   }
 }</component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/software/fsi/ia/utilities.py">
-      <ranges>
-        <range start1="11" end1="12" start2="11" end2="13" changelist="9e9f3c14-bc8b-4389-8aa6-98f5d2af86ca" />
-        <range start1="40" end1="40" start2="41" end2="42" changelist="9e9f3c14-bc8b-4389-8aa6-98f5d2af86ca" />
-        <range start1="88" end1="89" start2="90" end2="91" changelist="3ca5b4e8-1f77-4d68-8062-be980d1a9fc3" />
-        <range start1="90" end1="90" start2="92" end2="93" changelist="3ca5b4e8-1f77-4d68-8062-be980d1a9fc3" />
-      </ranges>
-    </file>
-  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
@@ -260,7 +247,23 @@
       <option name="project" value="LOCAL" />
       <updated>1761301571359</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="training started">
+      <option name="closed" value="true" />
+      <created>1762341084491</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1762341084491</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Changes by cargo">
+      <option name="closed" value="true" />
+      <created>1762341095603</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1762341095603</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -274,6 +277,8 @@
     <MESSAGE value="net implemented. utilities half implemented. &#10;&#10;image_class_assigner.py needs a optimization to avoid loading multiple times" />
     <MESSAGE value="optimization implemented" />
     <MESSAGE value="write text file modified" />
-    <option name="LAST_COMMIT_MESSAGE" value="write text file modified" />
+    <MESSAGE value="training started" />
+    <MESSAGE value="Changes by cargo" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changes by cargo" />
   </component>
 </project>
