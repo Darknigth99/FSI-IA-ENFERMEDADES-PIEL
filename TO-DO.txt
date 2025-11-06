@@ -1,0 +1,9 @@
+TO-DO:
+
+- Guardar pesos
+- 5 arquitecturas diferentes -> guardar hiperparámetros de cada una
+- Learning Transfer -> mirar enlace campus
+- hacer que suba el accuracy del evaluation
+- matriz de confusión
+- gráficas de las funciones
+
