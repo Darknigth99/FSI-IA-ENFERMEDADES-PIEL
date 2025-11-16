@@ -7,3 +7,4 @@ TO-DO:
 - matriz de confusión
 - gráficas de las funciones
 
+- preguntar: si para todas las arquitecturas que planteemos, el LR, EPOCHS, BATCH_SIZE tiene que ser igual
