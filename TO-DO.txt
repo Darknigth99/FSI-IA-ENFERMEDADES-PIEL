@@ -8,3 +8,13 @@ TO-DO:
 - gráficas de las funciones
 
 - preguntar: si para todas las arquitecturas que planteemos, el LR, EPOCHS, BATCH_SIZE tiene que ser igual
+
+
+Para mejorar los resultados de validation:
+
+- Poner los kernel invertidos
+- Hacer data augmentation
+- Bajar el dropout
+- Subir los kernel (neuronas) en las capas convolucionales
+- Probar AveragePooiing
+- Probar más capas convolutivas (y menos tb pero con más kernel (todavía)) 
